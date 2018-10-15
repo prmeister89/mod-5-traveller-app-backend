@@ -8,14 +8,15 @@ class TripsController < ApplicationController
     render json: find_trip
   end
 
-  # def update
-  #   @trip.update(trip_params)
-  #   if @trip.save
-  #     render json: @trip, status: :accepted
-  #   else
-  #     render json: { errors: @trip.errors.full_messages }, status: :unprocessible_entity
-  #   end
-  # end
+  def update
+    render json: find_trip
+    @trip.update(trip_params)
+    # if @trip.save
+    #   render json: @trip, status: :accepted
+    # else
+    #   render json: { errors: @trip.errors.full_messages }, status: :unprocessible_entity
+    # end
+  end
 
   def create
     render json: Trip.create(trip_params)
@@ -28,7 +29,7 @@ class TripsController < ApplicationController
   private
 
   def trip_params
-    params.permit(:id, :location, :startDate, :endDate, :notes)
+    params.require(:trip).permit(:id, :location, :startDate, :endDate, :notes, :luggage)
   end
 
   def find_trip

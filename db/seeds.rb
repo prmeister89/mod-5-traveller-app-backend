@@ -10,8 +10,8 @@
 #.strftime("%b-%d-%Y")
 trip1 = Trip.create(
   location: "Sydney, Australia",
-  startDate: Date.parse("10-10-2018"),
-  endDate: Date.parse("26-10-2018"),
+  startDate: "10-10-2018",
+  endDate: "26-10-2018",
   notes: "Try the coconut shrimp!"
 )
 trip2 = Trip.create(
