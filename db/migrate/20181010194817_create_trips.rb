@@ -5,7 +5,6 @@ class CreateTrips < ActiveRecord::Migration[5.2]
       t.date :startDate
       t.date :endDate
       t.string :notes
-      t.text :luggage, default: [], array: true
 
       t.timestamps
     end

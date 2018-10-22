@@ -20,3 +20,28 @@ trip2 = Trip.create(
   endDate: "18-09-2018",
   notes: "Go to the Old City street market!"
 )
+
+luggage1 = Luggage.create(trip_id: 1, qty: 6, item: "socks")
+luggage2 = Luggage.create(trip_id: 1, qty: 2, item: "jeans")
+luggage3 = Luggage.create(trip_id: 2, qty: 5, item: "shirts")
+luggage4 = Luggage.create(trip_id: 2, qty: 3, item: "sweaters")
+
+flight1 = Flight.create(
+  trip_id: 1,
+  from: "DC",
+  to: "Sydney",
+  flightNumber: "Delta Airlines DL31",
+  departure: "08:30",
+  gate: "D3",
+  seat: "24C"
+)
+
+flight2 = Flight.create(
+  trip_id: 2,
+  from: "Dulles",
+  to: "Chiang Mai",
+  flightNumber: "American Airlines AA423",
+  departure: "20:15",
+  gate: "A4",
+  seat: "16B"
+)
