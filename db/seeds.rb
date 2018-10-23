@@ -32,7 +32,8 @@ flight1 = Flight.create(
   to: "Sydney",
   flightNumber: "Delta Airlines DL31",
   departure: "08:30",
-  gate: "D3",
+  boardingGroup: "D3",
+  gate: "A22",
   seat: "24C"
 )
 
@@ -42,6 +43,7 @@ flight2 = Flight.create(
   to: "Chiang Mai",
   flightNumber: "American Airlines AA423",
   departure: "20:15",
-  gate: "A4",
+  boardingGroup: "D5",
+  gate: "A17",
   seat: "16B"
 )

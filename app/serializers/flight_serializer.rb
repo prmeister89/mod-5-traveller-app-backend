@@ -1,4 +1,3 @@
 class FlightSerializer < ActiveModel::Serializer
-  attributes :id, :from, :to, :flightNumber, :departure, :gate, :boardingGroup, :seat
-  belongs_to :trip
+  attributes :id, :trip_id, :from, :to, :flightNumber, :departure, :gate, :boardingGroup, :seat
 end
