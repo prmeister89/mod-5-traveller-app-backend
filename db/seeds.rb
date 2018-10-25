@@ -10,40 +10,138 @@
 #.strftime("%b-%d-%Y")
 trip1 = Trip.create(
   location: "Sydney, Australia",
-  startDate: "10-10-2018",
-  endDate: "26-10-2018",
-  notes: "Try the coconut shrimp!"
-)
-trip2 = Trip.create(
-  location: "Chiang Mai, Thailand",
-  startDate: "10-09-2018",
-  endDate: "18-09-2018",
-  notes: "Go to the Old City street market!"
+  startDate: "25-10-2018",
+  endDate: "30-10-2018",
+  notes: "Try the coconut shrimp!",
+  url: "https://amp.thisisinsider.com/images/59bda5f252d8fb45008b4908-750-563.jpg"
 )
 
-luggage1 = Luggage.create(trip_id: 1, qty: 6, item: "socks")
-luggage2 = Luggage.create(trip_id: 1, qty: 2, item: "jeans")
-luggage3 = Luggage.create(trip_id: 2, qty: 5, item: "shirts")
-luggage4 = Luggage.create(trip_id: 2, qty: 3, item: "sweaters")
+trip2 = Trip.create(
+  location: "Chiang Mai, Thailand",
+  startDate: "31-10-2018",
+  endDate: "7-11-2018",
+  notes: "Check out the Old City street market!",
+  url: "data:image/jpeg;base64,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"
+)
+
+trip3 = Trip.create(
+  location: "Marrakesh, Morocco",
+  startDate: "10-11-2018",
+  endDate: "18-11-2018",
+  notes: "Get a carpet!",
+  url: "https://www.packedperfectly.com/wp-content/uploads/2017/01/souk.jpg"
+)
+
+trip4 = Trip.create(
+  location: "Interlaken, Switzerland",
+  startDate: "19-11-2018",
+  endDate: "27-11-2018",
+  notes: "Bring your hiking gear!",
+  url: "https://www.touropia.com/gfx/d/best-places-to-visit-in-switzerland/interlaken.jpg?v=24a571daf1ae4594d7145a71e475c14f"
+)
+
+luggage1 = Luggage.create(trip_id: 1, qty: 1, item: "sunglasses")
+luggage2 = Luggage.create(trip_id: 1, qty: 1, item: "sunscreen")
+luggage3 = Luggage.create(trip_id: 1, qty: 6, item: "assorted shirts")
+luggage4 = Luggage.create(trip_id: 1, qty: 3, item: "jeans")
+luggage5 = Luggage.create(trip_id: 2, qty: 1, item: "sunglasses")
+luggage6 = Luggage.create(trip_id: 2, qty: 4, item: "tanktops")
+luggage7 = Luggage.create(trip_id: 2, qty: 2, item: "fannypacks")
+luggage8 = Luggage.create(trip_id: 2, qty: 3, item: "shorts")
+luggage9 = Luggage.create(trip_id: 3, qty: 1, item: "pair of sandals")
+luggage10 = Luggage.create(trip_id: 3, qty: 2, item: "sneakers")
+luggage11 = Luggage.create(trip_id: 3, qty: 4, item: "thin long sleeve shirts")
+luggage12 = Luggage.create(trip_id: 3, qty: 4, item: "shorts")
+luggage13 = Luggage.create(trip_id: 4, qty: 4, item: "jeans/hiking pants")
+luggage14 = Luggage.create(trip_id: 4, qty: 2, item: "boots")
+luggage15 = Luggage.create(trip_id: 4, qty: 6, item: "wool socks")
+luggage16 = Luggage.create(trip_id: 4, qty: 6, item: "assorted long sleeve shirts")
+
 
 flight1 = Flight.create(
   trip_id: 1,
-  from: "DC",
-  to: "Sydney",
+  from: "Washington, DC",
+  to: "Sydney, Australia",
   flightNumber: "Delta Airlines DL31",
   departure: "08:30",
   boardingGroup: "D3",
   gate: "A22",
-  seat: "24C"
+  seat: "24C",
+  ticket: "http://weavingobserver.com/wp-content/uploads/2018/08/Airplane-Ticket-Boarding-Pass-Ticket-Template-Vector-Website-Picture-Gallery-Plane-Ticket-Template-Pdf.jpg"
 )
 
 flight2 = Flight.create(
   trip_id: 2,
-  from: "Dulles",
-  to: "Chiang Mai",
+  from: "Sydney, Australia",
+  to: "Chiang Mai, Thailand",
   flightNumber: "American Airlines AA423",
   departure: "20:15",
   boardingGroup: "D5",
   gate: "A17",
-  seat: "16B"
+  seat: "16B",
+  ticket: "http://bedforlife.info/wp-content/uploads/2018/10/fake-airline-ticket-template-best-of-create-fake-airline-ticket-template-plane-blank-vancouvereast-of-fake-airline-ticket-template.jpg"
+)
+
+flight3 = Flight.create(
+  trip_id: 3,
+  from: "Chiang Mai, Thailand",
+  to: "Marrakesh, Morocco",
+  flightNumber: "EasyJet EJ1123",
+  departure: "10:30",
+  boardingGroup: "F4",
+  gate: "E3",
+  seat: "3E",
+  ticket: "http://bedforlife.info/wp-content/uploads/2018/10/fake-airline-ticket-template-best-of-create-fake-airline-ticket-template-plane-blank-vancouvereast-of-fake-airline-ticket-template.jpg"
+)
+
+flight4 = Flight.create(
+  trip_id: 4,
+  from: "Marrakesh, Morocco",
+  to: "Interlaken, Switzerland",
+  flightNumber: "Swiss Air 714A",
+  departure: "15:45",
+  boardingGroup: "A1",
+  gate: "D2",
+  seat: "31F",
+  ticket: "http://bedforlife.info/wp-content/uploads/2018/10/fake-airline-ticket-template-best-of-create-fake-airline-ticket-template-plane-blank-vancouvereast-of-fake-airline-ticket-template.jpg"
+)
+
+lodging1 = Lodging.create(
+  trip_id: 1,
+  name: "Hilton Hotel",
+  bookingCode: "7003BDZ7J",
+  checkin: "Oct. 10th at 9pm",
+  checkout: "Oct. 30th at 11am",
+  address: "1001 Main Ave. Sydney, Australia 80720",
+  info: "Hotel Phone: +66-993-060-087"
+)
+
+lodging2 = Lodging.create(
+  trip_id: 2,
+  name: "AirBnB Place",
+  bookingCode: "HMKFTCN7201",
+  checkin: "Oct. 31st at 3pm",
+  checkout: "Nov. 11th at 9am",
+  address: "karnkanok 19 Mahindol Rd. Chiang Mai, Thailand 50100",
+  info: "Host Phone: +63-337-123-975"
+)
+
+lodging3 = Lodging.create(
+  trip_id: 3,
+  name: "Marriot",
+  bookingCode: "SHDJF37347347YGBHN",
+  checkin: "Nov. 10th at 3pm",
+  checkout: "Nov. 15th at 9am",
+  address: "714 3rd St. Marakesh, Morocco 6632-71",
+  info: "Phone: +662-917-213-5585"
+)
+
+lodging4 = Lodging.create(
+  trip_id: 4,
+  name: "Tom's Place",
+  bookingCode: "-",
+  checkin: "Nov. 19th at 3pm",
+  checkout: "Nov. 27th at 9am",
+  address: "3140 Mountain Rd. Interlaken, Switzerland 2205-13",
+  info: "Tom's Phone: +33-649-444-9081"
 )

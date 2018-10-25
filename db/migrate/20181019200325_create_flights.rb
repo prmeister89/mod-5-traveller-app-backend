@@ -5,10 +5,12 @@ class CreateFlights < ActiveRecord::Migration[5.2]
       t.string :from
       t.string :to
       t.string :flightNumber
-      t.datetime :departure
+      t.time :departure
       t.string :gate
       t.string :boardingGroup
       t.string :seat
+      t.string :ticket
+
 
       t.timestamps
     end

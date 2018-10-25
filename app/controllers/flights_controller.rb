@@ -28,7 +28,7 @@ class FlightsController < ApplicationController
   private
 
   def flight_params
-    params.permit(:id, :trip_id, :from, :to, :flightNumber, :departure, :gate, :boardingGroup, :seat)
+    params.permit(:id, :trip_id, :from, :to, :flightNumber, :departure, :gate, :boardingGroup, :seat, :ticket)
   end
 
   def find_flight
